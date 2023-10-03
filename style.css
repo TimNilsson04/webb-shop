@@ -38,6 +38,7 @@ a {
 
 header {
     background-color: var(--color-hb);
+    background-image: linear-gradient(#7dd6f9, #c8ebfa);
     box-shadow: 2px 2px 8px 1px var(--color-hb);
     display: grid;
     grid-template-columns: auto auto;
@@ -154,7 +155,11 @@ footer {
 }
 
 .hero {
-    background-image: url("./img/phone-cases.jpg");
+    background:
+        linear-gradient(rgb(2, 169, 247, 0.4),
+            rgb(125, 214, 249, 0.4)),
+        url("./img/phone-cases.jpg");
+    background-color: #d4f0fc;
     background-position: 50% 20%;
     background-size: cover;
     text-align: center;
