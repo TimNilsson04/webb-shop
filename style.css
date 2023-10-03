@@ -34,7 +34,7 @@ body {
 
 header {
     background-color: var(--color-hb);
-    box-shadow: 4px 4px 8px 5px var(--color-hs);
+    box-shadow: 2px 2px 8px 1px var(--color-hb);
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
@@ -78,6 +78,10 @@ header {
 
     header input {
         margin-right: 5%;
+    }
+
+    body .grid-products-top {
+        grid-template-columns: auto;
     }
 }
 
@@ -137,7 +141,19 @@ footer {
     padding-bottom: 10%;
     font-size: var(--step-4);
     font-weight: 700;
+    box-shadow: 3px 3px 8px 2px #c4c9cc;
 }
+
+.grid-products {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.grid-products-top {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
 
 .center-price {
     text-align: center;
@@ -155,6 +171,7 @@ footer {
 }
 
 .wrapper {
+    box-shadow: 3px 3px 8px 2px #c4c9cc;
     width: 300px;
     height: 500px;
     background: white;
@@ -171,12 +188,12 @@ footer {
         box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
     }
 
-    .container {
+    .container-wrapper {
         width: 100%;
         height: 100%;
     }
 
-    .top {
+    .top-wrapper {
         height: 80%;
         width: 100%;
         background: url("./img/case.jpg") no-repeat;
@@ -186,7 +203,7 @@ footer {
         background-size: 100%;
     }
 
-    .bottom {
+    .bottom-wrapper {
         width: 200%;
         height: 20%;
         transition: transform 0.5s;
@@ -202,7 +219,7 @@ footer {
         }
     }
 
-    .bottom h1 .bottom:hover {
+    .bottom-wrapper h1 .bottom-wrapper:hover {
 
         .remove,
         .done {
@@ -211,7 +228,7 @@ footer {
     }
 
 
-    .inside {
+    .inside-wrapper {
         z-index: 9;
         background: #92879B;
         width: 140px;
@@ -244,14 +261,14 @@ footer {
                 top: 15px;
             }
 
-            .contents {
+            .contents-wrapper {
                 opacity: 1;
                 transform: scale(1);
                 transform: translateY(0);
             }
         }
 
-        .contents {
+        .contents-wrapper {
             padding: 5%;
             opacity: 0;
             transform: scale(0.5);
@@ -276,7 +293,140 @@ footer {
     }
 }
 
-.grid-products {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+.center-price-blue {
+    text-align: center;
+}
+
+.center-price-blue p {
+    margin-top: 0;
+    font-size: var(--step-2);
+}
+
+.center-price-blue h1 {
+    margin-bottom: 0.5%;
+    margin-top: 0.5%;
+    font-size: var(--step-3);
+}
+
+.wrapper-blue {
+    box-shadow: 3px 3px 8px 2px #c4c9cc;
+    width: 600px;
+    height: 1000px;
+    background: white;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0;
+    transform: scale(0.95);
+    transition: box-shadow 0.5s, transform 0.5s;
+
+    &:hover {
+        transform: scale(1);
+        box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .container-wrapper-blue {
+        width: 100%;
+        height: 100%;
+    }
+
+    .top-wrapper-blue {
+        height: 80%;
+        width: 100%;
+        background: url("./img/case-blue.jpg") no-repeat;
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%;
+    }
+
+    .bottom-wrapper-blue {
+        width: 200%;
+        height: 20%;
+        transition: transform 0.5s;
+
+        h1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .bottom-wrapper-blue h1 .bottom-wrapper-blue:hover {
+
+        .remove,
+        .done {
+            transform: translateY(-100%);
+        }
+    }
+
+
+    .inside-wrapper-blue {
+        z-index: 9;
+        background: #92879B;
+        width: 140px;
+        height: 140px;
+        position: absolute;
+        top: -70px;
+        right: -70px;
+        border-radius: 0px 0px 200px 200px;
+        transition: all 0.5s, border-radius 2s, top 1s;
+        overflow: hidden;
+
+        .icon-blue {
+            position: absolute;
+            right: 85px;
+            top: 85px;
+            color: white;
+            opacity: 1;
+        }
+
+        &:hover {
+            width: 100%;
+            right: 0;
+            top: 0;
+            border-radius: 0;
+            height: 80%;
+
+            .icon-blue {
+                opacity: 0;
+                right: 15px;
+                top: 15px;
+            }
+
+            .contents-wrapper-blue {
+                opacity: 1;
+                transform: scale(1);
+                transform: translateY(0);
+            }
+        }
+
+        .contents-wrapper-blue {
+            padding: 5%;
+            opacity: 0;
+            transform: scale(0.5);
+            transform: translateY(-200%);
+            transition: opacity 0.2s, transform 0.8s;
+
+            table {
+                text-align: left;
+                width: 100%;
+            }
+
+            h1,
+            p,
+            table {
+                color: white;
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+    }
 }
