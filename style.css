@@ -109,7 +109,7 @@ header {
 }
 
 header ul {
-    gap: 5px;
+    gap: 25px;
     list-style: none;
     display: flex;
 
@@ -156,8 +156,8 @@ footer {
 
 .hero {
     background:
-        linear-gradient(rgb(2, 169, 247, 0.4),
-            rgb(125, 214, 249, 0.4)),
+        linear-gradient(rgb(2, 169, 247, 0.3),
+            rgb(125, 214, 249, 0.1)),
         url("./img/phone-cases.jpg");
     background-color: #d4f0fc;
     background-position: 50% 20%;
@@ -338,13 +338,13 @@ input {
 
 .center-price-blue p {
     margin-top: 0;
-    font-size: var(--step-2);
+    font-size: var(--step-3);
 }
 
 .center-price-blue h1 {
     margin-bottom: 0.5%;
     margin-top: 0.5%;
-    font-size: var(--step-3);
+    font-size: var(--step-5);
 }
 
 .wrapper-blue {
