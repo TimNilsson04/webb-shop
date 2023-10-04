@@ -9,6 +9,16 @@
 </head>
 
 <body>
+    <script>
+        ('.buy-wrapper').click(function () {
+            $('.bottom-wrapper').addClass("clicked-wrapper");
+        });
+
+        ('.remove-wrapper').click(function () {
+            $('.bottom-wrapper').removeClass("clicked-wrapper");
+        });
+    </script>
+
     <header class="">
         <ul class="">
             <a href="/" class="">
@@ -19,24 +29,21 @@
                     <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
                 </svg>
             </a>
-            <li><a href="/" class="">Home</a></li>
-            <li><a href="#" class="">About</a></li>
+            <li><a href="/" class=""><button type="button" class="button-29">Home</button></a></li>
+            <li><a href="#" class=""> <button type="button" class="button-29">About</button></a></li>
         </ul>
 
 
         <div class="search-login">
             <form action="">
                 <input type="search" placeholder="Search..." required>
-
-                <button type="button" class="button-29">Login</button>
-                <button type="button" class="button-29">Sign-up</button>
             </form>
             <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icons"
-                    viewBox="0 0 16 16">
-                    <path
-                        d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z" />
-                </svg>
+                <a href="/cart.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="icons" viewBox="0 0 16 16">
+                        <path
+                            d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z" />
+                    </svg></a>
             </div>
 
         </div>
@@ -55,8 +62,18 @@
             <div class="container-wrapper-blue">
                 <div class="top-wrapper-blue"></div>
                 <div class="center-price-blue">
-                    <h1>Case</h1>
-                    <p>£250</p>
+                    <div class="center-price-grid-blue">
+                        <h1>Case</h1>
+                        <p class="price-blue">£250</p>
+                    </div>
+                    <a href=""><button type="button" class="button-29"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-cart-check-blue"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                                <path
+                                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg></button></a>
                 </div>
             </div>
             <div class="inside-wrapper-blue">
@@ -80,8 +97,18 @@
                 <div class="container-wrapper">
                     <div class="top-wrapper"></div>
                     <div class="center-price">
-                        <h1>Case</h1>
-                        <p>£250</p>
+                        <div class="center-price-grid">
+                            <h1>Case</h1>
+                            <p class="price">£250</p>
+                        </div>
+                        <a href=""><button type="button" class="button-29"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-cart-check"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                                    <path
+                                        d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                </svg></button></a>
                     </div>
                 </div>
                 <div class="inside-wrapper">
@@ -104,8 +131,18 @@
                 <div class="container-wrapper">
                     <div class="top-wrapper"></div>
                     <div class="center-price">
-                        <h1>Case</h1>
-                        <p>£250</p>
+                        <div class="center-price-grid">
+                            <h1>Case</h1>
+                            <p class="price">£250</p>
+                        </div>
+                        <a href=""><button type="button" class="button-29"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-cart-check"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                                    <path
+                                        d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                </svg></button></a>
                     </div>
                 </div>
                 <div class="inside-wrapper">
@@ -128,8 +165,18 @@
                 <div class="container-wrapper">
                     <div class="top-wrapper"></div>
                     <div class="center-price">
-                        <h1>Case</h1>
-                        <p>£250</p>
+                        <div class="center-price-grid">
+                            <h1>Case</h1>
+                            <p class="price">£250</p>
+                        </div>
+                        <a href=""><button type="button" class="button-29"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-cart-check"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                                    <path
+                                        d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                </svg></button></a>
                     </div>
                 </div>
                 <div class="inside-wrapper">
@@ -152,8 +199,18 @@
                 <div class="container-wrapper">
                     <div class="top-wrapper"></div>
                     <div class="center-price">
-                        <h1>Case</h1>
-                        <p>£250</p>
+                        <div class="center-price-grid">
+                            <h1>Case</h1>
+                            <p class="price">£250</p>
+                        </div>
+                        <a href=""><button type="button" class="button-29"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-cart-check"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                                    <path
+                                        d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                </svg></button></a>
                     </div>
                 </div>
                 <div class="inside-wrapper">
@@ -180,8 +237,17 @@
             <div class="container-wrapper">
                 <div class="top-wrapper"></div>
                 <div class="center-price">
-                    <h1>Case</h1>
-                    <p>£250</p>
+                    <div class="center-price-grid">
+                        <h1>Case</h1>
+                        <p class="price">£250</p>
+                    </div>
+                    <a href=""><button type="button" class="button-29"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                                <path
+                                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg></button></a>
                 </div>
             </div>
             <div class="inside-wrapper">
@@ -204,8 +270,17 @@
             <div class="container-wrapper">
                 <div class="top-wrapper"></div>
                 <div class="center-price">
-                    <h1>Case</h1>
-                    <p>£250</p>
+                    <div class="center-price-grid">
+                        <h1>Case</h1>
+                        <p class="price">£250</p>
+                    </div>
+                    <a href=""><button type="button" class="button-29"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                                <path
+                                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg></button></a>
                 </div>
             </div>
             <div class="inside-wrapper">
@@ -228,8 +303,17 @@
             <div class="container-wrapper">
                 <div class="top-wrapper"></div>
                 <div class="center-price">
-                    <h1>Case</h1>
-                    <p>£250</p>
+                    <div class="center-price-grid">
+                        <h1>Case</h1>
+                        <p class="price">£250</p>
+                    </div>
+                    <a href=""><button type="button" class="button-29"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                                <path
+                                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg></button></a>
                 </div>
             </div>
             <div class="inside-wrapper">
@@ -252,8 +336,17 @@
             <div class="container-wrapper">
                 <div class="top-wrapper"></div>
                 <div class="center-price">
-                    <h1>Case</h1>
-                    <p>£250</p>
+                    <div class="center-price-grid">
+                        <h1>Case</h1>
+                        <p class="price">£250</p>
+                    </div>
+                    <a href=""><button type="button" class="button-29"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                                <path
+                                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg></button></a>
                 </div>
             </div>
             <div class="inside-wrapper">
