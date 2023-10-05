@@ -6,55 +6,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>webb-shop</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="worthlessStyle.css">
+    <link rel="stylesheet" href="mediaQuery.css">
 </head>
 
 <body>
-    <script>
-        ('.buy-wrapper').click(function () {
-            $('.bottom-wrapper').addClass("clicked-wrapper");
-        });
-
-        ('.remove-wrapper').click(function () {
-            $('.bottom-wrapper').removeClass("clicked-wrapper");
-        });
-    </script>
-
-    <header class="">
-        <ul class="">
-            <a href="/" class="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icons"
-                    viewBox="0 0 16 16">
-                    <path
-                        d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
-                    <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-                </svg>
-            </a>
-            <li><a href="/" class=""><button type="button" class="button-29">Home</button></a></li>
-            <li><a href="#" class=""> <button type="button" class="button-29">About</button></a></li>
-        </ul>
-
-
-        <div class="search-login">
-            <form action="">
-                <input type="search" placeholder="Search..." required>
-            </form>
-            <div>
-                <a href="/cart.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="icons" viewBox="0 0 16 16">
-                        <path
-                            d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z" />
-                    </svg></a>
+    <header>
+        <div class="languages-frakt">
+            <div class="nav-wrapper">
+                <div class="sl-nav">
+                    Språk:
+                    <ul>
+                        <li><b>Svenska</b> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <div class="triangle"></div>
+                            <ul>
+                                <li><i class="sl-flag flag-swe">
+                                        <div id="germany"></div>
+                                    </i> <span class="active">Svenska</span></li>
+                                <li><i class="sl-flag flag-usa">
+                                        <div id="germany"></div>
+                                    </i> <span>Engelska</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
+            <div>
+                <p class="smol-text-2">Bara 500£ I Frakt!</p>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <ul class="">
+                <a href="/" class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icons"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
+                        <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                    </svg>
+                </a>
+                <li><a href="/" class="">Hem</a></li>
+                <li><a href="#" class="">Om oss</a></li>
+            </ul>
 
+
+            <div class="search-login">
+                <form action="">
+                    <input type="search" placeholder="Search..." required>
+                </form>
+                <div>
+                    <a href="/cart.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="icons" viewBox="0 0 16 16">
+                            <path
+                                d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z" />
+                        </svg></a>
+                </div>
+
+            </div>
         </div>
     </header>
 
     <div class="hero">
-        <h1>Safe Case</h1>
+        <h1 class="hero-text">Safe Case</h1>
     </div>
     <p class="smol-text">
         Image taken from Alina Chernysheva in Unsplash
     </p>
+
+
+    <div class="meny">
+        <div><a>
+                <div class="">
+                    <h2 class="border-case">Mönstrade skal</h2>
+                </div>
+            </a></div>
+        <div><a>
+                <div class="">
+                    <h2 class="border-case">Spegelskal</h2>
+                </div>
+            </a></div>
+        <div><a>
+                <div class="">
+                    <h2 class="border-case">Genomskinliga skal</h2>
+                </div>
+            </a></div>
+        <div><a>
+                <div class="">
+                    <h2 class="border-case">Silikonskal</h2>
+                </div>
+            </a></div>
+        <div><a>
+                <div class="">
+                    <h2 class="border-case">Tunna skal</h2>
+                </div>
+            </a></div>
+        <div><a>
+                <div class="">
+                    <h2 class="border-case">Konstläderskal</h2>
+                </div>
+            </a></div>
+        <div><a>
+                <div class="">
+                    <h2 class="border-case">Plånboksfodral</h2>
+                </div>
+            </a></div>
+        <div><a>
+                <div class="">
+                    <h2 class="border-case">Mobilhalsband</h2>
+                </div>
+            </a></div>
+        <div><a>
+                <div class="">
+                    <h2 class="border-case">MagSafe skal</h2>
+                </div>
+            </a></div>
+    </div>
 
     <div class="grid-products-top">
 
@@ -63,12 +129,11 @@
                 <div class="top-wrapper-blue"></div>
                 <div class="center-price-blue">
                     <div class="center-price-grid-blue">
-                        <h1>Case</h1>
+                        <h1>Mobilskal</h1>
                         <p class="price-blue">£250</p>
                     </div>
-                    <a href=""><button type="button" class="button-29"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="16" height="16" fill="currentColor" class="bi bi-cart-check-blue"
-                                viewBox="0 0 16 16">
+                    <a href=""><button type="button" class="cart"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-cart-check-blue" viewBox="0 0 16 16">
                                 <path
                                     d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
                                 <path
@@ -81,12 +146,16 @@
                 <div class="contents-wrapper-blue">
                     <table>
                         <tr>
-                            <th>Case</th>
-
+                            <th>Mobilskal</th>
+                            <th>Information</th>
                         </tr>
                         <tr>
-                            <td>Information</td>
-
+                            <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            </td>
+                            <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            </td>
                         </tr>
                     </table>
                 </div>
@@ -98,12 +167,11 @@
                     <div class="top-wrapper"></div>
                     <div class="center-price">
                         <div class="center-price-grid">
-                            <h1>Case</h1>
+                            <h1>Mobilskal</h1>
                             <p class="price">£250</p>
                         </div>
-                        <a href=""><button type="button" class="button-29"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="16" height="16" fill="currentColor" class="bi bi-cart-check"
-                                    viewBox="0 0 16 16">
+                        <a href=""><button type="button" class="cart"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
                                     <path
                                         d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
                                     <path
@@ -116,12 +184,18 @@
                     <div class="contents-wrapper">
                         <table>
                             <tr>
-                                <th>Case</th>
-
+                                <th>Mobilskal</th>
+                                <th>Information</th>
                             </tr>
                             <tr>
-                                <td>Information</td>
-
+                                <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </td>
+                                <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </td>
                             </tr>
                         </table>
                     </div>
@@ -132,12 +206,11 @@
                     <div class="top-wrapper"></div>
                     <div class="center-price">
                         <div class="center-price-grid">
-                            <h1>Case</h1>
+                            <h1>Mobilskal</h1>
                             <p class="price">£250</p>
                         </div>
-                        <a href=""><button type="button" class="button-29"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="16" height="16" fill="currentColor" class="bi bi-cart-check"
-                                    viewBox="0 0 16 16">
+                        <a href=""><button type="button" class="cart"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
                                     <path
                                         d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
                                     <path
@@ -150,12 +223,18 @@
                     <div class="contents-wrapper">
                         <table>
                             <tr>
-                                <th>Case</th>
-
+                                <th>Mobilskal</th>
+                                <th>Information</th>
                             </tr>
                             <tr>
-                                <td>Information</td>
-
+                                <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </td>
+                                <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </td>
                             </tr>
                         </table>
                     </div>
@@ -166,12 +245,11 @@
                     <div class="top-wrapper"></div>
                     <div class="center-price">
                         <div class="center-price-grid">
-                            <h1>Case</h1>
+                            <h1>Mobilskal</h1>
                             <p class="price">£250</p>
                         </div>
-                        <a href=""><button type="button" class="button-29"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="16" height="16" fill="currentColor" class="bi bi-cart-check"
-                                    viewBox="0 0 16 16">
+                        <a href=""><button type="button" class="cart"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
                                     <path
                                         d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
                                     <path
@@ -184,12 +262,18 @@
                     <div class="contents-wrapper">
                         <table>
                             <tr>
-                                <th>Case</th>
-
+                                <th>Mobilskal</th>
+                                <th>Information</th>
                             </tr>
                             <tr>
-                                <td>Information</td>
-
+                                <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </td>
+                                <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </td>
                             </tr>
                         </table>
                     </div>
@@ -200,12 +284,11 @@
                     <div class="top-wrapper"></div>
                     <div class="center-price">
                         <div class="center-price-grid">
-                            <h1>Case</h1>
+                            <h1>Mobilskal</h1>
                             <p class="price">£250</p>
                         </div>
-                        <a href=""><button type="button" class="button-29"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="16" height="16" fill="currentColor" class="bi bi-cart-check"
-                                    viewBox="0 0 16 16">
+                        <a href=""><button type="button" class="cart"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
                                     <path
                                         d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
                                     <path
@@ -218,12 +301,18 @@
                     <div class="contents-wrapper">
                         <table>
                             <tr>
-                                <th>Case</th>
-
+                                <th>Mobilskal</th>
+                                <th>Information</th>
                             </tr>
                             <tr>
-                                <td>Information</td>
-
+                                <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </td>
+                                <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </td>
                             </tr>
                         </table>
                     </div>
@@ -238,11 +327,11 @@
                 <div class="top-wrapper"></div>
                 <div class="center-price">
                     <div class="center-price-grid">
-                        <h1>Case</h1>
+                        <h1>Mobilskal</h1>
                         <p class="price">£250</p>
                     </div>
-                    <a href=""><button type="button" class="button-29"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                    <a href=""><button type="button" class="cart"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
                                 <path
                                     d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
                                 <path
@@ -255,12 +344,16 @@
                 <div class="contents-wrapper">
                     <table>
                         <tr>
-                            <th>Case</th>
-
+                            <th>Mobilskal</th>
+                            <th>Information</th>
                         </tr>
                         <tr>
-                            <td>Information</td>
-
+                            <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.</td>
+                            <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.</td>
                         </tr>
                     </table>
                 </div>
@@ -271,11 +364,11 @@
                 <div class="top-wrapper"></div>
                 <div class="center-price">
                     <div class="center-price-grid">
-                        <h1>Case</h1>
+                        <h1>Mobilskal</h1>
                         <p class="price">£250</p>
                     </div>
-                    <a href=""><button type="button" class="button-29"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                    <a href=""><button type="button" class="cart"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
                                 <path
                                     d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
                                 <path
@@ -288,12 +381,16 @@
                 <div class="contents-wrapper">
                     <table>
                         <tr>
-                            <th>Case</th>
-
+                            <th>Mobilskal</th>
+                            <th>Information</th>
                         </tr>
                         <tr>
-                            <td>Information</td>
-
+                            <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.</td>
+                            <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.</td>
                         </tr>
                     </table>
                 </div>
@@ -304,11 +401,11 @@
                 <div class="top-wrapper"></div>
                 <div class="center-price">
                     <div class="center-price-grid">
-                        <h1>Case</h1>
+                        <h1>Mobilskal</h1>
                         <p class="price">£250</p>
                     </div>
-                    <a href=""><button type="button" class="button-29"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                    <a href=""><button type="button" class="cart"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
                                 <path
                                     d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
                                 <path
@@ -321,12 +418,16 @@
                 <div class="contents-wrapper">
                     <table>
                         <tr>
-                            <th>Case</th>
-
+                            <th>Mobilskal</th>
+                            <th>Information</th>
                         </tr>
                         <tr>
-                            <td>Information</td>
-
+                            <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.</td>
+                            <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.</td>
                         </tr>
                     </table>
                 </div>
@@ -337,11 +438,11 @@
                 <div class="top-wrapper"></div>
                 <div class="center-price">
                     <div class="center-price-grid">
-                        <h1>Case</h1>
+                        <h1>Mobilskal</h1>
                         <p class="price">£250</p>
                     </div>
-                    <a href=""><button type="button" class="button-29"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                    <a href=""><button type="button" class="cart"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
                                 <path
                                     d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
                                 <path
@@ -354,12 +455,16 @@
                 <div class="contents-wrapper">
                     <table>
                         <tr>
-                            <th>Case</th>
-
+                            <th>Mobilskal</th>
+                            <th>Information</th>
                         </tr>
                         <tr>
-                            <td>Information</td>
-
+                            <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.</td>
+                            <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.</td>
                         </tr>
                     </table>
                 </div>
