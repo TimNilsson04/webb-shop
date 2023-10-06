@@ -109,7 +109,7 @@
     }
 
     body .meny {
-        grid-template-columns: auto;
+        grid-template-columns: auto auto;
     }
 
     body .bi-cart-check-blue {
@@ -119,5 +119,21 @@
 
     body .cart {
         margin-top: 42%;
+    }
+
+    body .product-card-body {
+        margin-left: 0;
+    }
+
+    body .center-price-blue-product {
+        gap: 5rem;
+    }
+
+    body .product-placement {
+        gap: 1rem;
+    }
+
+    body .cart-grid {
+        margin-right: auto;
     }
 }
