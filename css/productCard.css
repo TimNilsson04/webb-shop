@@ -666,6 +666,7 @@
 }
 
 .buy-total {
+    gap: 1rem;
     margin-bottom: 2%;
     margin-right: 3%;
     display: flex;
