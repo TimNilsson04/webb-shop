@@ -54,7 +54,7 @@ a {
 header {
     background-color: var(--color-hb);
     background-image: linear-gradient(#7dd6f9, #c8ebfa);
-    box-shadow: 2px 2px 8px 1px var(--color-hb);
+    box-shadow: 2px 2px 8px 1px #c4c9cc;
     display: grid;
     grid-template-columns: auto;
     align-items: center;
